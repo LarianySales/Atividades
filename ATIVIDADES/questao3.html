@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atv-3</title>
+</head>
+<body>
+        
+        <!-- 03) Uma empresa decide dar um aumento de 30% aos funcionários com salários inferiores a R$ 500,00. Faça um programa que receba o salário do funcionário e mostre o valor do salário reajustado ou uma mensagem, caso não ele não tenha direito ao aumento. -->
+    <script>
+let sal, salRej
+sal = parseInt(prompt("Digite seu salário:"))
+ 
+ salRej = sal + (0.3 * sal)
+
+if(sal < 500){
+    console.log("Seu novo salário é de:" +salRej )
+}else if(sal >= 500){
+    console.log("Você não terá o reajuste,seu salário ainda é de:" + sal)
+}
+
+    </script>
+</body>
+</html>
