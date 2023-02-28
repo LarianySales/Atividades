@@ -11,13 +11,19 @@
 
  -->
  <script>
-  let i, aluno
+  
+  let aluno ,totalN = 0, media
+
 
 aluno = parseInt(prompt("Digite o número de alunos:"))
 
-while(i< 6){
-    console
+for(let i=0;i < aluno;i++){
+   nota = parseFloat(prompt(`Digite as notas dos alunos${i+1}`))
+   totalN += nota 
 }
+media = totalN/ aluno
+
+console.log(`A media da sala é ${media.toFixed(2)}`)
  </script>
 </body>
 </html>
